@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        google()  // Google's Maven repository
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.google.gms:google-services:4.3.14'
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
